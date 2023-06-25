@@ -18,6 +18,8 @@
 		2A626BDB2A1607F3001B2E3E /* MVP_ToyProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A626BDA2A1607F3001B2E3E /* MVP_ToyProjectUITestsLaunchTests.swift */; };
 		2A8D39B52A4746B1008F6415 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2A8D39B42A4746B1008F6415 /* SnapKit */; };
 		2A8D39B82A474A38008F6415 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2A8D39B72A474A38008F6415 /* Alamofire */; };
+		2A8D39C22A480F93008F6415 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D39C12A480F93008F6415 /* NetworkService.swift */; };
+		2A8D39C42A481009008F6415 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8D39C32A481009008F6415 /* ImageModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		2A626BD42A1607F3001B2E3E /* MVP_ToyProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVP_ToyProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A626BD82A1607F3001B2E3E /* MVP_ToyProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVP_ToyProjectUITests.swift; sourceTree = "<group>"; };
 		2A626BDA2A1607F3001B2E3E /* MVP_ToyProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVP_ToyProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2A8D39C12A480F93008F6415 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		2A8D39C32A481009008F6415 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +107,11 @@
 		2A626BB62A1607F1001B2E3E /* MVP_ToyProject */ = {
 			isa = PBXGroup;
 			children = (
-				2A626BB72A1607F1001B2E3E /* AppDelegate.swift */,
-				2A626BB92A1607F1001B2E3E /* SceneDelegate.swift */,
-				2A626BBB2A1607F1001B2E3E /* ViewController.swift */,
-				2A626BBD2A1607F1001B2E3E /* Main.storyboard */,
-				2A626BC02A1607F3001B2E3E /* Assets.xcassets */,
-				2A626BC22A1607F3001B2E3E /* LaunchScreen.storyboard */,
+				2A8D39BE2A480F6B008F6415 /* Screens */,
+				2A8D39BD2A480ED0008F6415 /* Services */,
+				2A8D39BB2A480EC2008F6415 /* Model */,
+				2A8D39BA2A480A9D008F6415 /* Application */,
+				2A8D39B92A480A88008F6415 /* Global */,
 				2A626BC52A1607F3001B2E3E /* Info.plist */,
 			);
 			path = MVP_ToyProject;
@@ -129,6 +132,49 @@
 				2A626BDA2A1607F3001B2E3E /* MVP_ToyProjectUITestsLaunchTests.swift */,
 			);
 			path = MVP_ToyProjectUITests;
+			sourceTree = "<group>";
+		};
+		2A8D39B92A480A88008F6415 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				2A626BC02A1607F3001B2E3E /* Assets.xcassets */,
+				2A626BC22A1607F3001B2E3E /* LaunchScreen.storyboard */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		2A8D39BA2A480A9D008F6415 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				2A626BB72A1607F1001B2E3E /* AppDelegate.swift */,
+				2A626BB92A1607F1001B2E3E /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		2A8D39BB2A480EC2008F6415 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2A8D39C32A481009008F6415 /* ImageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2A8D39BD2A480ED0008F6415 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2A8D39C12A480F93008F6415 /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2A8D39BE2A480F6B008F6415 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				2A626BBB2A1607F1001B2E3E /* ViewController.swift */,
+				2A626BBD2A1607F1001B2E3E /* Main.storyboard */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,7 +317,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A626BBC2A1607F1001B2E3E /* ViewController.swift in Sources */,
+				2A8D39C42A481009008F6415 /* ImageModel.swift in Sources */,
 				2A626BB82A1607F1001B2E3E /* AppDelegate.swift in Sources */,
+				2A8D39C22A480F93008F6415 /* NetworkService.swift in Sources */,
 				2A626BBA2A1607F1001B2E3E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
